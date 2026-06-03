@@ -104,3 +104,192 @@
 .animate-float-fast {
   animation: float 5s ease-in-out infinite;
 }
+
+/* -----------------------------------------
+   ELEGANT LIGHT & CLASSY WHITE OVERRIDES
+   ----------------------------------------- */
+.light {
+  background-color: #FCFAF7 !important;
+  color: #1C1310 !important;
+}
+
+/* Base element overrides under light container */
+.light,
+.light html,
+.light body,
+.light .bg-bg-dark,
+.light [class*="bg-bg-dark"],
+.light [class*="bg-[#0A0A08]"],
+.light [class*="bg-[#0a0a08]"],
+.light [class*="bg-[#080707]"] {
+  background-color: #FCFAF7 !important;
+}
+
+/* Text selections in light mode */
+.light ::selection {
+  background-color: rgba(255, 78, 0, 0.15) !important;
+  color: #FF4E00 !important;
+}
+
+/* Scrollbar styling in Light Mode */
+.light::-webkit-scrollbar-track,
+.light ::-webkit-scrollbar-track {
+  background: #FCFAF7 !important;
+}
+.light::-webkit-scrollbar-thumb,
+.light ::-webkit-scrollbar-thumb {
+  background: #EAE3D9 !important;
+}
+.light::-webkit-scrollbar-thumb:hover,
+.light ::-webkit-scrollbar-thumb:hover {
+  background: #FF4E00 !important;
+}
+
+/* Secondary header styling */
+.light header {
+  background-color: rgba(252, 250, 247, 0.95) !important;
+}
+.light header.bg-transparent {
+  background-color: transparent !important;
+}
+
+/* Card overrides: from deep dark to crisp, luxurious solid white */
+.light [class*="bg-[#12100f]"],
+.light [class*="bg-[#141211]"],
+.light [class*="bg-[#120f0d]"],
+.light [class*="bg-[#120f0e]"],
+.light [class*="bg-[#120f0f]"],
+.light [class*="bg-[#130E0D]"],
+.light [class*="bg-[#171413]"],
+.light [class*="bg-[#191514]"],
+.light [class*="bg-[#191412]"],
+.light [class*="bg-[#191312]"],
+.light .glass-panel {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 4px 30px rgba(28, 19, 16, 0.03), 0 1px 3px rgba(28, 19, 16, 0.02) !important;
+}
+
+/* Intermediate containers like inputs, forms, option wrappers, secondary highlights */
+.light [class*="bg-[#1c1816]"],
+.light [class*="bg-[#1c1817]"],
+.light [class*="bg-[#1e1917]"],
+.light [class*="bg-[#211d1c]"],
+.light [class*="bg-[#1d1917]"],
+.light [class*="bg-[#211c1b]"],
+.light [class*="bg-[#2c2624]"],
+.light [class*="bg-[#221c1a]"],
+.light [class*="bg-[#181413]"],
+.light [class*="bg-[#2a201c]"],
+.light [class*="bg-[#2e1d19]"],
+.light [class*="bg-[#161312]"],
+.light [class*="bg-[#2d2624]"] {
+  background-color: #F4EFE6 !important;
+}
+
+/* Accent highlight badges and selections */
+.light [class*="bg-[#421d17]"],
+.light [class*="bg-[#2e1d19]"] {
+  background-color: rgba(255, 78, 0, 0.12) !important;
+  color: #FF4E00 !important;
+}
+
+/* Border overrides: from high contrast dark dividers to delicate subtle sand lines */
+.light [class*="border-[#383330]"],
+.light [class*="border-[#2b2523]"],
+.light [class*="border-[#2e2826]"],
+.light [class*="border-[#3e322e]"],
+.light [class*="border-[#3e3431]"],
+.light [class*="border-[#3e3532]"],
+.light [class*="border-[#302826]"],
+.light [class*="border-[#3a3230]"],
+.light [class*="border-[#251f1e]"],
+.light [class*="border-[#382a27]"],
+.light [class*="border-[#2e2624]"],
+.light [class*="border-[#38302d]"],
+.light [class*="border-[#2e2725]"],
+.light [class*="border-[#38302e]"],
+.light [class*="border-[#292422]"],
+.light [class*="border-[#352f2d]"],
+.light [class*="border-glass-border"],
+.light .border-glass-border,
+.light [class*="border-[rgba(255,255,255"] {
+  border-color: rgba(28, 19, 16, 0.1) !important;
+}
+
+/* Explicit text color replacements - rich espresso black for high readability */
+.light .text-cream,
+.light [class*="text-cream"],
+.light [class*="text-[#f7f3f0]"],
+.light [class*="text-[#fdecdb]"],
+.light [class*="text-[#eaf0eb]"],
+.light [class*="text-[#fcf4ec]"],
+.light [class*="text-white"],
+.light h1, .light h2, .light h3, .light h4, .light h5, .light h6,
+.light .font-heading {
+  color: #1C1310 !important;
+}
+
+/* Primary brands / CTA text overrides inside white elements */
+.light .bg-accent .text-white,
+.light .bg-accent span,
+.light .bg-accent,
+.light [class*="bg-accent"] {
+  color: #FFFFFF !important;
+}
+
+/* Secondary muted elements - elegant soft charcoal */
+.light .text-text-dim,
+.light [class*="text-text-dim"],
+.light [class*="text-[#bcaea6]"],
+.light [class*="text-[#9c8b82]"],
+.light [class*="text-[#80716A]"] {
+  color: #6E625D !important;
+}
+
+/* Special button / tag hover overlays to match light palettes */
+.light [class*="hover:bg-[#1a1716]"]:hover,
+.light [class*="hover:bg-[#2b2523]"]:hover,
+.light [class*="hover:bg-[#1c1817]"]:hover,
+.light [class*="hover:bg-[#2b2624]"]:hover {
+  background-color: #ECE5D9 !important;
+  color: #1C1310 !important;
+}
+
+/* Overriding input values text color in light theme so typed text is espresso black */
+.light input,
+.light select,
+.light textarea {
+  color: #1C1310 !important;
+}
+
+.light input::placeholder,
+.light textarea::placeholder {
+  color: #8C7F79 !important;
+}
+
+/* FAQ item expansion specific override */
+.light .border-accent {
+  border-color: #FF4E00 !important;
+}
+
+/* Decorative icons and background illustrations */
+.light .text-cream\/20,
+.light .text-cream\/10,
+.light [class*="text-cream/"] {
+  color: rgba(28, 19, 16, 0.06) !important;
+}
+
+.light .text-accent,
+.light [class*="text-accent"] {
+  color: #FF4E00 !important;
+}
+
+/* Ensure the live demo and modal inputs are highly visual */
+.light option {
+  background-color: #FFFFFF !important;
+  color: #1C1310 !important;
+}
+
+.light .modal-overlay {
+  background-color: rgba(28, 19, 16, 0.7) !important;
+}

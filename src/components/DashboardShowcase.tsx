@@ -46,7 +46,7 @@ export default function DashboardShowcase() {
       {/* Dashboard Top Navigation Mockup */}
       <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-[#292422] pb-6 mb-8 gap-4">
         <div>
-          <div className="flex items-center gap-2 mb-1.5ClassName">
+          <div className="flex items-center gap-2 mb-1.5">
             <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
             <span className="text-xs font-mono uppercase tracking-[0.2em] text-accent">Nuvio Live Control Hub</span>
           </div>

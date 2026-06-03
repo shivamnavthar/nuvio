@@ -27,7 +27,9 @@ import {
   GlassWater,
   ChefHat,
   Terminal,
-  PlaySquare
+  PlaySquare,
+  Sun,
+  Moon
 } from "lucide-react";
 
 import { 
@@ -67,6 +69,21 @@ export default function App() {
 
   // Watch product tour modal (Simulated modern clean overlay)
   const [showTourModal, setShowTourModal] = useState<boolean>(false);
+
+  // Classic ultra-premium default light-mode configuration
+  const [isLightMode, setIsLightMode] = useState<boolean>(true);
+
+  useEffect(() => {
+    if (isLightMode) {
+      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
+      document.documentElement.style.backgroundColor = "#FCFAF7";
+    } else {
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
+      document.documentElement.style.backgroundColor = "#0A0A08";
+    }
+  }, [isLightMode]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -126,7 +143,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-bg-dark text-cream selection:bg-accent selection:text-white">
+    <div className={`min-h-screen transition-colors duration-300 ${isLightMode ? "light bg-[#FCFAF7] text-[#1C1310]" : "dark bg-[#0A0A08] text-[#EBE6E0]"} selection:bg-accent selection:text-white`}>
       
       {/* BACKGROUND FLOATING INGREDIENTS & PARTICLES GRAPHIC LAYER */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
@@ -183,7 +200,29 @@ export default function App() {
           </nav>
 
           {/* Nav actions CTA */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setIsLightMode(!isLightMode)}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-medium cursor-pointer transition-all duration-300 focus:outline-none ${
+                isLightMode 
+                  ? "border-[#2C201C]/15 bg-[#F4EFE6]/50 hover:bg-[#EFEAE2] text-[#2C201C]" 
+                  : "border-[#3e3431] bg-[#141211] hover:bg-[#1a1716] text-[#EBE6E0]"
+              }`}
+              aria-label="Toggle Color Theme"
+              title={isLightMode ? "Switch to Cinematic Dark Mode" : "Switch to Classy Light Mode"}
+            >
+              {isLightMode ? (
+                <>
+                  <Moon className="h-3.5 w-3.5 text-[#FF4E00]" />
+                  <span className="font-mono text-[10px] tracking-wide">Dark Mode</span>
+                </>
+              ) : (
+                <>
+                  <Sun className="h-3.5 w-3.5 text-[#FF4E00] animate-pulse" />
+                  <span className="font-mono text-[10px] tracking-wide">Light Mode</span>
+                </>
+              )}
+            </button>
             <a 
               href="#contact-section" 
               className="hidden sm:inline-flex px-5 py-2.5 bg-accent hover:bg-accent-hover text-white text-xs font-semibold rounded-lg uppercase tracking-wider transition-all focus:outline-none shadow-md hover:shadow-accent/20"
