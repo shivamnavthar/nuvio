@@ -89,7 +89,7 @@ export const CORE_FEATURES: FeatureItem[] = [
     id: "growth",
     title: "Customer Growth Tools",
     badge: "Autonomous Retention",
-    description: "Aura identifies tier-one regulars, dynamic dining preferences, and automatically activates personalized high-margin campaigns.",
+    description: "Nuvio identifies tier-one regulars, dynamic dining preferences, and automatically activates personalized high-margin campaigns.",
     details: [
       "High-value VIP automated reservation pacing",
       "Personalized menu allergy matching",
@@ -112,7 +112,7 @@ export const CORE_FEATURES: FeatureItem[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: "1",
-    quote: "Aura transitioned our operations from reactive stress to pure tactical foresight. We scaled from 2 to 5 locations in the NYC area, keeping labor costs standard at 24% lower levels.",
+    quote: "Nuvio transitioned our operations from reactive stress to pure tactical foresight. We scaled from 2 to 5 locations in the NYC area, keeping labor costs standard at 24% lower levels.",
     author: "Elena Rostov",
     role: "Culinary Director",
     restaurant: "Gilded Hearth Group",
@@ -122,7 +122,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: "2",
-    quote: "Before Aura, estimating prep volumes for Ten-Ku was guesswork, resulting in too much wasted fresh A5 Wagyu and bluefin tuna. Aura's item forecasts saved us more than $14,000 in raw stock in our first quarter.",
+    quote: "Before Nuvio, estimating prep volumes for Ten-Ku was guesswork, resulting in too much wasted fresh A5 Wagyu and bluefin tuna. Nuvio's item forecasts saved us more than $14,000 in raw stock in our first quarter.",
     author: "Hiroshi Sato",
     role: "Head Chef & Co-Owner",
     restaurant: "Ten-Ku Sushi",
@@ -132,7 +132,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: "3",
-    quote: "With multiple Napa properties, we need perfect, unified control. Aura integrates smoothly with Toast to provide our GMs with dynamic staffing levels based on winery visitor trends.",
+    quote: "With multiple Napa properties, we need perfect, unified control. Nuvio integrates smoothly with Toast to provide our GMs with dynamic staffing levels based on winery visitor trends.",
     author: "Charlotte Du Pont",
     role: "Managing Director",
     restaurant: "Dahlia Cellars Napa",
@@ -145,7 +145,7 @@ export const TESTIMONIALS: Testimonial[] = [
 export const PRICING_PLANS: PricingPlan[] = [
   {
     id: "starter",
-    name: "Aura Atelier",
+    name: "Nuvio Atelier",
     price: "$289",
     billing: "per month, billed annually",
     description: "For single-location culinary boutiques seeking elite forecasting and scheduling tools.",
@@ -161,7 +161,7 @@ export const PRICING_PLANS: PricingPlan[] = [
   },
   {
     id: "growth",
-    name: "Aura Premium",
+    name: "Nuvio Premium",
     price: "$549",
     billing: "per month, billed annually",
     description: "Perfect for established dining venues and growing, ambitious culinary concepts.",
@@ -178,7 +178,7 @@ export const PRICING_PLANS: PricingPlan[] = [
   },
   {
     id: "enterprise",
-    name: "Aura Grand Union",
+    name: "Nuvio Grand Union",
     price: "Custom",
     billing: "bespoke institutional pricing",
     description: "Uncompromised fleet intelligence for multi-state brands, luxury hotel groups, and franchise chains.",
@@ -198,11 +198,11 @@ export const PRICING_PLANS: PricingPlan[] = [
 export const FAQS: FAQItem[] = [
   {
     question: "Which POS and reservation systems are supported?",
-    answer: "Aura integrates securely with all premium POS platforms including Toast, Micros Symphony, NCR Aloha, Clover, Square, and Lightspeed. We also sync with reservation engines such as OpenTable, Resy, and SevenRooms to map reservation schedules directly into labor plans."
+    answer: "Nuvio integrates securely with all premium POS platforms including Toast, Micros Symphony, NCR Aloha, Clover, Square, and Lightspeed. We also sync with reservation engines such as OpenTable, Resy, and SevenRooms to map reservation schedules directly into labor plans."
   },
   {
     question: "How long does system onboarding and training take?",
-    answer: "For standard locations, setup is completed in under 48 hours. Aura connects to your historic POS logs securely to seed the predictive model. No manual data entry or floor hardware is required."
+    answer: "For standard locations, setup is completed in under 48 hours. Nuvio connects to your historic POS logs securely to seed the predictive model. No manual data entry or floor hardware is required."
   },
   {
     question: "Is Aura suitable for small, single-location bistros?",
@@ -214,7 +214,7 @@ export const FAQS: FAQItem[] = [
   },
   {
     question: "Can we support centralized operations for multiple locations?",
-    answer: "Absolutely. Aura's Grand Union framework is designed specifically for multi-unit operators. It allows corporate executives and cluster GMs to standardise labor margins, audit inventory waste, and share top workforce performers across venues in real-time."
+    answer: "Absolutely. Nuvio's Grand Union framework is designed specifically for multi-unit operators. It allows corporate executives and cluster GMs to standardise labor margins, audit inventory waste, and share top workforce performers across venues in real-time."
   }
 ];
 

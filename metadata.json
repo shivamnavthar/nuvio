@@ -1,5 +1,5 @@
 {
-  "name": "Aura Restaurant AI SaaS",
+  "name": "Nuvio Restaurant AI SaaS",
   "description": "The premium operating system for the future of luxury and high-volume restaurant operations.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]

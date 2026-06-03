@@ -61,13 +61,13 @@ export default function AiConsultant() {
       } else {
         // Fallback simulated report built dynamically in client so it works flawlessly on static GitHub Pages
         const simulatedAdvice = `### 🌟 High-Performance Operations Audit: ${concept.toUpperCase()}
-*Aura AI modeled these strategic recommendations for your ${concept} using dynamic client-side telemetry:*
+*Nuvio AI modeled these strategic recommendations for your ${concept} using dynamic client-side telemetry:*
 
 #### 📊 1. Tactical Staffing & Forecasting Plan
-Your bottleneck with **${bottleneck.toLowerCase()}** at your **${locations === 1 ? 'Single Boutique Location' : locations === 3 ? '2 - 5 Group' : '6+ Enterprise'}** points to a clear structural optimization opportunity. Aura AI recommends aligning daily prep blocks 90 minutes earlier to smooth out floor workloads before peak periods. This staffing reallocation will trim labor overhead by an estimated **14.2%** while decreasing seat turn times.
+Your bottleneck with **${bottleneck.toLowerCase()}** at your **${locations === 1 ? 'Single Boutique Location' : locations === 3 ? '2 - 5 Group' : '6+ Enterprise'}** points to a clear structural optimization opportunity. Nuvio AI recommends aligning daily prep blocks 90 minutes earlier to smooth out floor workloads before peak periods. This staffing reallocation will trim labor overhead by an estimated **14.2%** while decreasing seat turn times.
 
 #### 🥩 2. Smart Stock & Inventory Strategy
-Inventory wastage and preparation delays are mitigated by Aura's stock replenishment logic. For a high-caliber **${concept}** setup, raw ingredient safety buffers should be automated based on holiday lists and reservation indicators. Scheduling a secure POS sync inside **${posSystem}** will trigger automated alerts 48 hours beforehand.
+Inventory wastage and preparation delays are mitigated by Nuvio's stock replenishment logic. For a high-caliber **${concept}** setup, raw ingredient safety buffers should be automated based on holiday lists and reservation indicators. Scheduling a secure POS sync inside **${posSystem}** will trigger automated alerts 48 hours beforehand.
 
 #### 🚀 3. Revenue & Client Growth Accelerators
 Leverage high-intent reservation flow patterns dynamically. By utilizing personalized guest profiles directly, your team can streamline room pacing by **1.1x** during supreme weekend hours without causing rushed guest perception.`;

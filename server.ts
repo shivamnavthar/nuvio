@@ -41,10 +41,10 @@ async function startServer() {
 *Platform is running in standalone demonstration mode. Below code reflects custom high-impact recommendations formulated for your specific parameters:*
 
 #### 📊 1. Tactical Staffing & Forecasting Plan
-Your severe bottleneck with **${bottleneck.toLowerCase()}** at your **${locations || 1} location(s)** points to a clear structural optimization opportunity. To solve this, Aura AI forecasts hourly dine-in density and delivery spikes using historical POS trends in **${posSystem || 'Toast'}**. By shifting preparation blocks 90 minutes earlier, food-prep workloads are smoothed out before peak dine-in rush hours (7:00 PM - 9:00 PM). This staffing reallocation will trim labor costs by an estimated **14.2%** while decreasing turn times.
+Your severe bottleneck with **${bottleneck.toLowerCase()}** at your **${locations || 1} location(s)** points to a clear structural optimization opportunity. To solve this, Nuvio AI forecasts hourly dine-in density and delivery spikes using historical POS trends in **${posSystem || 'Toast'}**. By shifting preparation blocks 90 minutes earlier, food-prep workloads are smoothed out before peak dine-in rush hours (7:00 PM - 9:00 PM). This staffing reallocation will trim labor costs by an estimated **14.2%** while decreasing turn times.
 
 #### 🥩 2. Smart Stock & Inventory Strategy
-Inventory wastage and delivery delays are mitigated by Aura's neural stock replenishment models. For a high-caliber **${concept}** kitchen, stock safety buffers for key perishables should be recalibrated dynamically based on regional food festival calendars, weather anomalies, and social index trends. We recommend scheduling a direct POS sync to trigger alerts 48 hours before high-occupancy event markers.
+Inventory wastage and delivery delays are mitigated by Nuvio's neural stock replenishment models. For a high-caliber **${concept}** kitchen, stock safety buffers for key perishables should be recalibrated dynamically based on regional food festival calendars, weather anomalies, and social index trends. We recommend scheduling a direct POS sync to trigger alerts 48 hours before high-occupancy event markers.
 
 #### 🚀 3. Revenue & Client Growth Accelerators
 Leverage high-intent reservation flow patterns to automate client retention. By utilizing automated guest summary recommendations, your team can personalize dining notes and past preferences across all location profiles. Dynamic table pacing recommendations will increase table turns by **1.1x** during peak weekend volume blocks without rushed guest perception.`,
@@ -94,7 +94,7 @@ Make it sound sophisticated, analytical, and tailored to senior restaurant group
     res.json({
       success: true,
       message: `Thank you, ${name}. Your executive operational demo is booked. A gourmet systems designer will reach out at ${phone || email} within 12 business hours.`,
-      leadId: `AURA-${Math.floor(100000 + Math.random() * 900000)}`
+      leadId: `NUVIO-${Math.floor(100000 + Math.random() * 900000)}`
     });
   });
 

@@ -48,7 +48,7 @@ export default function DashboardShowcase() {
         <div>
           <div className="flex items-center gap-2 mb-1.5ClassName">
             <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
-            <span className="text-xs font-mono uppercase tracking-[0.2em] text-accent">Aura Live Control Hub</span>
+            <span className="text-xs font-mono uppercase tracking-[0.2em] text-accent">Nuvio Live Control Hub</span>
           </div>
           <h3 className="font-heading text-2xl lg:text-3xl font-bold tracking-tight text-[#f7f3f0]">
             Operational Intelligence Console
@@ -122,9 +122,9 @@ export default function DashboardShowcase() {
           <div className="mt-2 p-4 rounded-2xl bg-[#191312] border border-[#e35d44]/15 flex items-start gap-3">
             <Sparkles className="h-5 w-5 text-accent shrink-0 mt-0.5" />
             <div>
-              <h5 className="text-xs font-bold text-[#f7f3f0]">Aura Recommendation Model</h5>
+              <h5 className="text-xs font-bold text-[#f7f3f0]">Nuvio Recommendation Model</h5>
               <p className="text-[11px] text-[#bcaea6] mt-0.5 leading-relaxed">
-                By auto-balancing your staffing rosters based on cloud occupancy projections, Aura is pacing to save this location **$2,488** in payroll overhead this week alone.
+                By auto-balancing your staffing rosters based on cloud occupancy projections, Nuvio is pacing to save this location **$2,488** in payroll overhead this week alone.
               </p>
             </div>
           </div>
@@ -212,7 +212,7 @@ export default function DashboardShowcase() {
             </div>
             
             <p className="text-[11px] text-center text-[#9c8b82] mt-4 font-mono">
-              Aura forecast nodes align shift rosters with real transaction data intervals, eliminating up to 18% of labor waste.
+              Nuvio forecast nodes align shift rosters with real transaction data intervals, eliminating up to 18% of labor waste.
             </p>
           </div>
 
@@ -267,7 +267,7 @@ export default function DashboardShowcase() {
                     </div>
                     
                     <div className="text-right shrink-0">
-                      <span className="text-[10px] font-mono text-[#bcaea6] block">Aura Projected Impact</span>
+                      <span className="text-[10px] font-mono text-[#bcaea6] block">Nuvio Projected Impact</span>
                       <span className="text-[11px] font-bold text-[#f7f3f0]">{alert.impact}</span>
                     </div>
                   </button>

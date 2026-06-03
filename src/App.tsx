@@ -109,7 +109,7 @@ export default function App() {
         const simulatedResult: DemoResponse = {
           success: true,
           message: `Thank you, ${leadName}. Your executive operational demo is booked. A gourmet systems designer will reach out at ${leadPhone || leadEmail} within 12 business hours.`,
-          leadId: `AURA-${Math.floor(100000 + Math.random() * 900000)}`
+          leadId: `NUVIO-${Math.floor(100000 + Math.random() * 900000)}`
         };
         setBookingResult(simulatedResult);
       }
@@ -160,14 +160,14 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           
           {/* Logo Brand */}
-          <a href="#" className="flex items-center gap-3 group focus:outline-none" aria-label="Aura Operations Home">
+          <a href="#" className="flex items-center gap-3 group focus:outline-none" aria-label="Nuvio Operations Home">
             <div className="relative flex items-center justify-center p-2 rounded-xl bg-accent text-white overflow-hidden transition-all duration-300 shadow group-hover:shadow-accent/35">
               <UtensilsCrossed className="h-5 w-5 transition-transform duration-500 group-hover:rotate-45" />
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
             </div>
             <div className="flex flex-col">
               <span className="font-heading text-lg font-bold tracking-[0.15em] text-[#fdecdb] uppercase flex items-center gap-1">
-                Aura <span className="font-sans font-normal text-[10px] tracking-normal lowercase px-1.5 py-0.5 bg-[#421d17] text-accent rounded-full">AI</span>
+                Nuvio <span className="font-sans font-normal text-[10px] tracking-normal lowercase px-1.5 py-0.5 bg-[#421d17] text-accent rounded-full">AI</span>
               </span>
               <span className="text-[9px] font-mono tracking-widest text-text-dim uppercase">RESTAURANT OS</span>
             </div>
@@ -203,7 +203,7 @@ export default function App() {
             <div className="lg:col-span-6 flex flex-col items-start gap-6">
               <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#1c1816] border border-[#3e3431] text-xs font-medium text-[#fdecdb] animate-pulse">
                 <Sparkles className="h-4 w-4 text-accent" />
-                <span className="font-mono tracking-wider">AURA v4.2 IS NOW LIVE ONLINE</span>
+                <span className="font-mono tracking-wider">NUVIO v4.2 IS NOW LIVE ONLINE</span>
               </div>
 
               <h1 className="font-heading text-4xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight text-[#f7f3f0] leading-[1.08] text-balance">
@@ -254,7 +254,7 @@ export default function App() {
                 {/* Background image fetched via generate_image tool */}
                 <img 
                   src="/src/assets/images/luxury_gastronomy_1780464790469.png" 
-                  alt="Aura Fine Gastronomy Presentation Plate" 
+                  alt="Nuvio Fine Gastronomy Presentation Plate" 
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover opacity-60 mix-blend-lighten scale-105 group-hover:scale-100 transition-transform duration-1000"
                 />
@@ -434,7 +434,7 @@ export default function App() {
         <section className="py-24 px-6 max-w-7xl mx-auto text-center" aria-label="Implementation Flow">
           <div className="max-w-2xl mx-auto mb-16">
             <span className="text-xs font-mono uppercase tracking-[0.25em] text-text-dim block mb-4">
-              Aura Deployment Architecture
+              Nuvio Deployment Architecture
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight text-[#f7f3f0]">
               Smooth 3-Step Setup
@@ -456,7 +456,7 @@ export default function App() {
               </div>
               <h3 className="font-heading text-lg font-bold text-[#f7f3f0] mt-2">Connect POS Credentials</h3>
               <p className="text-xs text-text-dim max-w-xs leading-relaxed">
-                Connect your brand POS (Toast, Square, Micros, etc.) securely using read-only API access. Aura auto-ingests up to 2 years of local transactions records instantly.
+                Connect your brand POS (Toast, Square, Micros, etc.) securely using read-only API access. Nuvio auto-ingests up to 2 years of local transactions records instantly.
               </p>
             </div>
 
@@ -467,7 +467,7 @@ export default function App() {
               </div>
               <h3 className="font-heading text-lg font-bold text-[#f7f3f0] mt-2">Continuous Neural Auditing</h3>
               <p className="text-xs text-text-dim max-w-xs leading-relaxed">
-                Aura cross-examines historical table fills, food costs sheets, shift cancellations, weather indexes, and community events to generate highly accurate operational forecasts.
+                Nuvio cross-examines historical table fills, food costs sheets, shift cancellations, weather indexes, and community events to generate highly accurate operational forecasts.
               </p>
             </div>
 
@@ -499,7 +499,7 @@ export default function App() {
                 Chosen by Strategic Operators
               </h2>
               <p className="text-xs sm:text-sm text-text-dim leading-relaxed text-left">
-                Read how elite kitchens and multi-location culinary groups deploy Aura to standardize fine hospitality and streamline operations safely.
+                Read how elite kitchens and multi-location culinary groups deploy Nuvio to standardize fine hospitality and streamline operations safely.
               </p>
 
               {/* Slider Dots */}
@@ -648,7 +648,7 @@ export default function App() {
             {/* Left info column */}
             <div className="lg:col-span-5 flex flex-col items-start gap-4 text-left">
               <span className="text-xs font-mono uppercase tracking-[0.25em] text-accent font-semibold">
-                Join Aura Executive Pilot
+                Join Nuvio Executive Pilot
               </span>
               <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight text-[#f7f3f0] leading-tight text-balance">
                 Request a Private Consultation
@@ -664,11 +664,11 @@ export default function App() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="h-4 w-4 text-accent shrink-0" />
-                  <span className="text-xs text-text-dim font-mono">founders@aurasystems.io</span>
+                  <span className="text-xs text-text-dim font-mono">founders@nuviosystems.io</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-accent shrink-0" />
-                  <span className="text-xs text-text-dim font-mono">+1 (800) Aura-Al-OS</span>
+                  <span className="text-xs text-text-dim font-mono">+1 (800) Nuvio-AI-OS</span>
                 </div>
               </div>
             </div>
@@ -889,7 +889,7 @@ export default function App() {
                 <UtensilsCrossed className="h-4 w-4" />
               </div>
               <span className="font-heading text-base font-bold tracking-[0.15em] text-[#fdecdb] uppercase">
-                Aura AI
+                Nuvio AI
               </span>
             </a>
             <p className="text-xs text-text-dim max-w-sm leading-relaxed text-left">
@@ -904,7 +904,7 @@ export default function App() {
           <div className="md:col-span-4 grid grid-cols-2 gap-8 text-left w-full">
             
             <div className="flex flex-col gap-3">
-              <h4 className="text-xs font-bold text-[#fdecdb] uppercase tracking-wider">Aura Platform</h4>
+              <h4 className="text-xs font-bold text-[#fdecdb] uppercase tracking-wider">Nuvio Platform</h4>
               <a href="#dashboard-section" className="text-xs text-text-dim hover:text-accent transition-colors">Operations Hub</a>
               <a href="#features-section" className="text-xs text-text-dim hover:text-accent transition-colors">System Features</a>
               <a href="#ai-advisor-tool-anchor" className="text-xs text-text-dim hover:text-accent transition-colors">B2B Audit Tool</a>
@@ -954,7 +954,7 @@ export default function App() {
 
         {/* Bottom micro lines legal */}
         <div className="max-w-7xl mx-auto border-t border-[#1e1918] mt-12 pt-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-[10px] font-mono text-[#9c8b82]">
-          <span>© {new Date().getFullYear()} Aura Systems Group Inc. All luxury operating rights reserved globally.</span>
+          <span>© {new Date().getFullYear()} Nuvio Systems Group Inc. All luxury operating rights reserved globally.</span>
           <div className="flex gap-4">
             <span>ADA Accessible Portal</span>
             <span>SEC Regulatory Filings</span>
@@ -988,7 +988,7 @@ export default function App() {
               <div className="absolute inset-0 opacity-20">
                 <img 
                   src="/src/assets/images/luxury_gastronomy_1780464790469.png" 
-                  alt="Aura Video Backdrop Overlay" 
+                  alt="Nuvio Video Backdrop Overlay" 
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover filter blur"
                 />
@@ -1000,7 +1000,7 @@ export default function App() {
               </div>
 
               <h4 className="font-heading text-xl font-bold text-[#f7f3f0] relative z-10 mb-1.5">
-                Simulated Aura Cinematic Platform Run
+                Simulated Nuvio Cinematic Platform Run
               </h4>
               <p className="text-xs text-[#bcaea6] max-w-sm leading-relaxed relative z-10">
                 This presentation illustrates POS integration sequences, operational alert modules, and daily forecasting feeds.
@@ -1013,7 +1013,7 @@ export default function App() {
             </div>
 
             <p className="text-xs text-[#bcaea6] text-center leading-relaxed">
-              We look forward to demonstrating Aura Live sync with your actual POS on your scheduled call!
+              We look forward to demonstrating Nuvio Live sync with your actual POS on your scheduled call!
             </p>
           </div>
         </div>
