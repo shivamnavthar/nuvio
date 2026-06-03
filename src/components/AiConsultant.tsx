@@ -81,7 +81,7 @@ export default function AiConsultant() {
           const trimmed = line.trim();
           if (trimmed.startsWith("###")) {
             return (
-              <h3 key={idx} className="font-heading text-xl lg:text-2xl font-bold text-[#eb5a3c] border-b border-[#2e2624] pb-2 mt-8 first:mt-0">
+              <h3 key={idx} className="font-heading text-xl lg:text-2xl font-bold text-accent border-b border-[#2e2624] pb-2 mt-8 first:mt-0">
                 {trimmed.replace(/###\s*/, "")}
               </h3>
             );
@@ -89,7 +89,7 @@ export default function AiConsultant() {
           if (trimmed.startsWith("####")) {
             return (
               <h4 key={idx} className="font-heading text-base lg:text-lg font-bold text-[#fdecdb] flex items-center gap-2 mt-6">
-                <span className="h-1.5 w-1.5 bg-[#eb5a3c] rounded-full inline-block" />
+                <span className="h-1.5 w-1.5 bg-accent rounded-full inline-block" />
                 {trimmed.replace(/####\s*/, "")}
               </h4>
             );
@@ -100,7 +100,7 @@ export default function AiConsultant() {
             return (
               <ul key={idx} className="list-none pl-4 space-y-1">
                 <li className="text-sm text-[#bcaea6] flex items-start gap-2">
-                  <span className="text-[#eb5a3c] mt-1 shrink-0">•</span>
+                  <span className="text-accent mt-1 shrink-0">•</span>
                   <span>{content}</span>
                 </li>
               </ul>
@@ -112,7 +112,7 @@ export default function AiConsultant() {
             return (
               <div key={idx} className="pl-4 space-y-1">
                 <p className="text-sm text-[#bcaea6] flex items-start gap-3">
-                  <span className="font-mono text-xs text-[#eb5a3c] bg-[#eb5a3c]/15 px-1.5 py-0.5 rounded mt-0.5">
+                  <span className="font-mono text-xs text-accent bg-accent/15 px-1.5 py-0.5 rounded mt-0.5">
                     {trimmed.match(/^\d+/)?.[0]}
                   </span>
                   <span>{content}</span>
@@ -137,11 +137,11 @@ export default function AiConsultant() {
   return (
     <div className="rounded-3xl border border-[#3e322e] bg-[#120f0d] p-6 lg:p-10 shadow-xl overflow-hidden relative" id="ai-advisor-tool">
       {/* Absolute graphic backings */}
-      <div className="absolute top-0 right-0 w-80 h-80 bg-[#eb5a3c]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl pointer-events-none" />
       
       <div className="flex items-center gap-2 mb-3">
-        <Sparkles className="h-5 w-5 text-[#eb5a3c]" />
-        <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#eb5a3c]">Executive Pilot Interface</span>
+        <Sparkles className="h-5 w-5 text-accent" />
+        <span className="text-xs font-mono uppercase tracking-[0.2em] text-accent">Executive Pilot Interface</span>
       </div>
       
       <h3 className="font-heading text-2xl lg:text-3xl font-bold tracking-tight text-[#f7f3f0] mb-3">
@@ -166,7 +166,7 @@ export default function AiConsultant() {
                 value={concept}
                 onChange={(e) => setConcept(e.target.value)}
                 placeholder="e.g. Modern French Bistro, High-Volume Japanese Steakhouse"
-                className="w-full bg-[#1c1816]/75 border border-[#38302d] focus:border-[#eb5a3c] rounded-xl px-4 py-3 text-sm text-[#f7f3f0] focus:outline-none transition-all"
+                className="w-full bg-[#1c1816]/75 border border-[#38302d] focus:border-accent rounded-xl px-4 py-3 text-sm text-[#f7f3f0] focus:outline-none transition-all"
               />
             </div>
 
@@ -178,7 +178,7 @@ export default function AiConsultant() {
               <select
                 value={posSystem}
                 onChange={(e) => setPosSystem(e.target.value)}
-                className="w-full bg-[#1c1816]/75 border border-[#38302d] focus:border-[#eb5a3c] rounded-xl px-4 py-3 text-sm text-[#f7f3f0] focus:outline-none transition-all appearance-none cursor-pointer"
+                className="w-full bg-[#1c1816]/75 border border-[#38302d] focus:border-accent rounded-xl px-4 py-3 text-sm text-[#f7f3f0] focus:outline-none transition-all appearance-none cursor-pointer"
               >
                 {POS_OPTIONS.map((opt) => (
                   <option key={opt} value={opt} className="bg-[#120f0d] text-[#f7f3f0]">
@@ -201,7 +201,7 @@ export default function AiConsultant() {
                     onClick={() => setLocations(num)}
                     className={`cursor-pointer border py-3 rounded-xl text-xs font-medium transition-all ${
                       locations === num
-                        ? "bg-[#eb5a3c]/15 border-[#eb5a3c] text-white"
+                        ? "bg-accent/15 border-accent text-white"
                         : "bg-[#1c1816]/30 border-[#2e2725] text-[#bcaea6] hover:bg-[#1c1816]/70"
                     }`}
                   >
@@ -222,7 +222,7 @@ export default function AiConsultant() {
                 value={bottleneck}
                 onChange={(e) => setBottleneck(e.target.value)}
                 placeholder="e.g. Saturday floor staff layout overhead or raw food wastage"
-                className="w-full bg-[#1c1816]/75 border border-[#38302d] focus:border-[#eb5a3c] rounded-xl px-4 py-3 text-sm text-[#f7f3f0] focus:outline-none transition-all"
+                className="w-full bg-[#1c1816]/75 border border-[#38302d] focus:border-accent rounded-xl px-4 py-3 text-sm text-[#f7f3f0] focus:outline-none transition-all"
               />
             </div>
 
@@ -230,7 +230,7 @@ export default function AiConsultant() {
 
           <button
             type="submit"
-            className="cursor-pointer w-full md:w-auto px-8 py-4 bg-[#eb5a3c] hover:bg-[#f26a4e] text-white font-medium rounded-xl text-sm transition-all flex items-center justify-center gap-2 shadow-md hover:shadow-[#eb5a3c]/20"
+            className="cursor-pointer w-full md:w-auto px-8 py-4 bg-accent hover:bg-accent-hover text-white font-medium rounded-xl text-sm transition-all flex items-center justify-center gap-2 shadow-md hover:shadow-accent/20"
           >
             <span>Generate Executive Operations Audit</span>
             <ArrowRight className="h-4 w-4" />
@@ -241,7 +241,7 @@ export default function AiConsultant() {
       {/* Loading Block */}
       {loading && (
         <div className="py-20 flex flex-col items-center justify-center text-center">
-          <Loader2 className="h-10 w-10 text-[#eb5a3c] animate-spin mb-4" />
+          <Loader2 className="h-10 w-10 text-accent animate-spin mb-4" />
           <h4 className="font-heading text-lg font-semibold text-[#f7f3f0] animate-pulse">
             Processing Core Operational Model
           </h4>
@@ -253,14 +253,14 @@ export default function AiConsultant() {
 
       {/* Error state */}
       {errorMsg && !loading && (
-        <div className="p-6 rounded-2xl bg-[#2e1c19] border border-[#eb5a3c]/30 flex items-start gap-3 mt-4">
-          <AlertCircle className="h-5 w-5 text-[#eb5a3c] shrink-0 mt-0.5" />
+        <div className="p-6 rounded-2xl bg-[rgba(255,78,0,0.05)] border border-accent/20 flex items-start gap-3 mt-4">
+          <AlertCircle className="h-5 w-5 text-accent shrink-0 mt-0.5" />
           <div>
             <h5 className="text-sm font-semibold text-[#f7f3f0]">Service Friction Detected</h5>
             <p className="text-xs text-[#bcaea6] mt-1 leading-relaxed">{errorMsg}</p>
             <button
               onClick={handleReset}
-              className="mt-3 text-xs font-mono text-[#eb5a3c] underline hover:text-[#f87171] inline-flex items-center gap-1.5"
+              className="mt-3 text-xs font-mono text-accent underline hover:text-[#f87171] inline-flex items-center gap-1.5"
             >
               <RotateCcw className="h-3 w-3" />
               <span>Retry custom audit request</span>
@@ -286,7 +286,7 @@ export default function AiConsultant() {
             {/* CTA action footer after audit */}
             <div className="border-t border-[#292422] pt-6 mt-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
-                <span className="text-[11px] font-mono text-[#eb5a3c] block">READY TO INTEGRATE THESE INSIGHTS?</span>
+                <span className="text-[11px] font-mono text-accent block">READY TO INTEGRATE THESE INSIGHTS?</span>
                 <span className="text-xs text-[#bcaea6]">Book a private session to connect your actual live POS.</span>
               </div>
               
@@ -300,7 +300,7 @@ export default function AiConsultant() {
                 </button>
                 <a
                   href="#contact-section"
-                  className="px-5 py-2.5 bg-[#eb5a3c] hover:bg-[#f26a4e] text-white font-medium rounded-lg text-xs transition-all inline-flex items-center gap-1.5 shadow"
+                  className="px-5 py-2.5 bg-accent hover:bg-accent-hover text-white font-medium rounded-lg text-xs transition-all inline-flex items-center gap-1.5 shadow"
                 >
                   <span>Book VIP System Demo</span>
                   <ArrowRight className="h-3 w-3" />

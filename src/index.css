@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-accent: #FF4E00;
+  --color-accent-hover: #E04500;
+  --color-cream: #EBE6E0;
+  --color-bg-dark: #0A0A08;
+  --color-text-dim: rgba(235, 230, 224, 0.6);
+  --color-glass: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.08);
+}
+
 @layer base {
   :root {
     --font-heading: 'Outfit', sans-serif;
@@ -11,8 +25,8 @@
   html {
     scroll-behavior: smooth;
     font-family: var(--font-sans);
-    background-color: #0b0a0a; /* Deep obsidian background */
-    color: #f7f3f0; /* Soft warm oatmeal cream text */
+    background-color: #0A0A08; /* Deep obsidian background from Immersive UI */
+    color: #EBE6E0; /* Warm premium cream text from Immersive UI */
   }
 
   body {
@@ -21,7 +35,7 @@
 
   /* Custom high-contrast focus rings for ADA/accessibility compliance */
   :focus-visible {
-    outline: 2px solid #eb5a3c; /* Elegant red-orange */
+    outline: 2px solid #FF4E00; /* Elegant red-orange accent */
     outline-offset: 4px;
   }
 }
@@ -31,35 +45,35 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0d0c0c;
+  background: #0A0A08;
 }
 ::-webkit-scrollbar-thumb {
-  background: #2b2725;
+  background: #201e1c;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #eb5a3c;
+  background: #FF4E00;
 }
 
-/* Glassmorphism utility card overrides */
+/* Glassmorphism utility card overrides matching style system */
 .glass-panel {
-  background: rgba(20, 18, 17, 0.7);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .glass-panel-warm {
-  background: rgba(25, 20, 18, 0.75);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(235, 90, 60, 0.15);
+  background: rgba(255, 78, 0, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 78, 0, 0.15);
 }
 
 .glow-heavy {
-  box-shadow: 0 0 40px -5px rgba(235, 90, 60, 0.25);
+  box-shadow: 0 0 40px -5px rgba(255, 78, 0, 0.25);
 }
 
 .glow-soft {
-  box-shadow: 0 0 25px -5px rgba(235, 90, 60, 0.1);
+  box-shadow: 0 0 25px -5px rgba(255, 78, 0, 0.1);
 }
 
 @keyframes marquee {
